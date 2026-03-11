@@ -12,12 +12,12 @@ namespace Group6Flight.Areas.Admin.Controllers
 
         public IActionResult ManageUsers()
         {
-            return Content($"Area: [Airlines], Controller: Users, Action: ManageUsers");
+            return Content($"Area: [Admin], Controller: Users, Action: ManageUsers");
         }
 
         public IActionResult RightsObligations()
         {
-            return Content($"Area: [Airlines], Controller: Users, Action: RightsObligations");
+            return Content($"Area: [Admin], Controller: Users, Action: RightsObligations");
         }
     }
 }
