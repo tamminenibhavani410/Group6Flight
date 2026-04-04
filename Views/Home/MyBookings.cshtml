@@ -1,0 +1,71 @@
+﻿@model Group6Flight.Models.FlightsViewModel
+@{
+    ViewData["Title"] = "My Bookings";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">
+        <i class="fa-solid fa-suitcase-rolling text-primary"></i> My Bookings
+    </h2>
+
+
+
+    @if (Model.FlightBooking != null && Model.FlightBooking.Any())
+    {
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>FlightCode</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>CabinType</th>
+                    <th>AircraftType</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var booking in Model.FlightBooking)
+                {
+                    <tr>
+                        <td>@booking.Flight.FlightCode</td>
+                        <td>@booking.Flight.From</td>
+                        <td>@booking.Flight.To</td>
+                        <td>@booking.Flight.CabinType</td>
+                        <td>@booking.Flight.AircraftType</td>
+                        <td>
+                            <form asp-action="CancelBooking" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@booking.FlightBookingId" />
+                                <button type="submit" class="btn btn-danger btn-sm">
+                                    <i class="fa-solid fa-xmark"></i> Cancel
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-info">You have no bookings yet.</div>
+    }
+
+    <div class="col-sm-12 mt-4 d-flex">
+        <div class="col-sm-10">
+            <form asp-action="CancelAllBookings" method="post" class="mb-3">
+                <button type="submit" class="btn btn-danger">
+                    <i class="fa-solid fa-trash"></i> Cancel All Bookings
+                </button>
+            </form>
+        </div>
+        <div class="col-sm-2">
+            <a asp-action="Index" class="btn btn-secondary"
+               asp-route-activeFromKey="@Model.ActiveFromKey"
+               asp-route-activeToKey="@Model.ActiveToKey"
+               asp-route-activeDepartureDate="@Model.ActiveDepartureDate"
+               asp-route-activeCabinType="@Model.ActiveCabinType">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </div>
+</div>

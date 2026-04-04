@@ -62,7 +62,13 @@ C:\Users\yache\OneDrive\Attachments\Desktop\Juo_J\SPRING_2026\Bhavani Tammaneni\
 C:\Users\yache\OneDrive\Attachments\Desktop\Juo_J\SPRING_2026\Bhavani Tammaneni\Project\Group6Flight\Group6Flight\wwwroot\lib\jquery\LICENSE.txt
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\alaska_airlines.png
+wwwroot\img\american_airlines.png
+wwwroot\img\delta_air_lines.png
 wwwroot\img\FlightLogo.png
+wwwroot\img\jetblue_airways.png
+wwwroot\img\southwest_airlines.png
+wwwroot\img\united_airlines.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

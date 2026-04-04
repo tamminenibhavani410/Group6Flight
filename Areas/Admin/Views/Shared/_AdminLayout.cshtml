@@ -40,7 +40,10 @@
         </div>
     </nav>
 </header>
-
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success pt-5">@TempData["Message"]</div>
+}
 <main role="main" class="pb-3">
     @RenderBody()
 </main>

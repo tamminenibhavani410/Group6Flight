@@ -1,0 +1,60 @@
+﻿@model List<Group6Flight.Models.Flight>
+
+@{
+    ViewData["Title"] = "Flights";
+}
+
+<h2>Flights</h2>
+
+<div class="mb-3">
+    <a asp-controller="Flights" asp-action="Add" class="btn btn-primary">
+        Add New Flight
+    </a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Flight Code</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Date</th>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Cabin</th>
+            <th>Aircraft</th>
+            <th>Price ($)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var flight in Model)
+        {
+            <tr>
+                <td>@flight.FlightCode</td>
+                <td>@flight.From</td>
+                <td>@flight.To</td>
+                <td>@flight.Date.ToString("yyyy-MM-dd")</td>
+                <td>@flight.DepartureTime.ToString(@"hh\:mm")</td>
+                <td>@flight.ArrivalTime.ToString(@"hh\:mm")</td>
+                <td>@flight.CabinType</td>
+                <td>@flight.AircraftType</td>
+                <td>@flight.Price.ToString("F2")</td>
+                <td>
+                    <img src="~/img/@flight.Airline.ImageName" alt="@flight.Airline.ImageName" width="70" height="50" class="rounded shadow-sm" />
+                </td>
+                <td>
+                    <a asp-controller="Flights" asp-action="Edit"
+                       asp-route-id="@flight.FlightId" class="btn btn-sm btn-warning">
+                        Edit
+                    </a>
+
+                    <a asp-controller="Flights" asp-action="Delete"
+                       asp-route-id="@flight.FlightId" class="btn btn-sm btn-danger">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

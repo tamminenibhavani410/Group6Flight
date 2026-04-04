@@ -1,0 +1,76 @@
+﻿@model Group6Flight.Models.FlightsViewModel
+@{
+    ViewData["Title"] = "Flight Details";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="mb-3">@Model.Flights.FlightCode</h2>
+        <p class="text-muted">@Model.Flights.Date</p>
+
+        <hr />
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>From:</strong> @Model.Flights.From
+            </div>
+            <div class="col-md-6">
+                <strong>To:</strong> @Model.Flights.To
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>DepartureTime:</strong> @Model.Flights.DepartureTime
+            </div>
+            <div class="col-md-6">
+                <strong>ArrivalTime:</strong>
+                <span class="text-success fw-bold">@Model.Flights.ArrivalTime</span>
+            </div>
+        </div>
+        
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Duration:</strong>
+                @{
+                    var duration = Model.Flights.ArrivalTime - Model.Flights.DepartureTime;
+                    if (duration.TotalMinutes < 0)
+                    {
+                        duration = duration.Add(TimeSpan.FromHours(24));
+                    }
+                }
+                <span class="text-primary fw-bold">
+                    @duration.ToString(@"hh\:mm")
+                </span>
+            </div>
+            <div class="col-md-6">
+                <strong>CabinType:</strong> 
+                <span class="text-success fw-bold">@Model.Flights.CabinType</span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>AircraftType:</strong> @Model.Flights.AircraftType
+            </div>
+            <div class="col-md-6">
+                <strong>Emission:</strong>
+                <span class="text-success fw-bold">@Model.Flights.Emission</span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <strong>Price:</strong> @Model.Flights.Price
+            </div>
+        </div>
+
+        <div class="mt-4 d-flex justify-content-between">
+            <a asp-action="Index"
+               asp-route-activeFromKey="@Model.ActiveFromKey"
+               asp-route-activeToKey="@Model.ActiveToKey"
+               asp-route-activeDepartureDate="@Model.ActiveDepartureDate"
+               asp-route-activeCabinType="@Model.ActiveCabinType"
+            class="btn btn-secondary">← Back to Home</a>
+            <a asp-action="Booking" asp-route-id="@Model.Flights.FlightId" class="btn btn-primary">Book</a>
+        </div>
+    </div>
+</div>

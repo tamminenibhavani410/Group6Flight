@@ -12,8 +12,11 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-
-    @RenderBody()
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
 
     <footer class="border-top footer text-muted mt-auto">
         <div class="container d-flex justify-content-between align-items-center py-3">

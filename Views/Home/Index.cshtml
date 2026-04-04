@@ -1,7 +1,135 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model Group6Flight.Models.FlightsViewModel
+
+@{
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to home dashboard</h1>
+<div class="container my-4">
+    <h2 class="mb-4">Find Your Airline</h2>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card p-3">
+                <h5>Filter</h5>
+                <form method="post" asp-action="Index">
+                    <div class="mb-3">
+                        <label for="activeCabinType" class="form-label">CabinType</label>
+                        <select name="activeCabinType" class="form-control">
+                            <option value="all" class="@Model.CheckActiveCabinType("all")">All</option>
+                            @foreach (var cabin in Model.CabinTypes)
+                            {
+                                if (Model.ActiveCabinType == cabin)
+                                {
+                                    <option value="@cabin" selected="true" class="@Model.CheckActiveCabinType(cabin.ToString())">
+                                        @cabin
+                                    </option>
+                                }
+                                else
+                                {
+                                    <option value="@cabin" class="@Model.CheckActiveCabinType(cabin.ToString())">
+                                        @cabin
+                                    </option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="activeFromKey" class="form-label">From</label>
+                        <select name="activeFromKey" class="form-control">
+                            <option value="all" class="@Model.CheckActiveFrom("all")">All</option>
+                            @foreach (Group6Flight.Models.Flight C in Model.Flight)
+                            {
+                                if (Model.ActiveFromKey == C.From.ToString())
+                                {
+                                    <option value="@C.From" selected="true" class="@Model.CheckActiveFrom(C.From.ToString())">
+                                        @C.From
+                                    </option>
+                                }
+                                else
+                                {
+                                    <option value="@C.From" class="@Model.CheckActiveFrom(C.From.ToString())">
+                                        @C.From
+                                    </option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="activeToKey" class="form-label">To</label>
+                        <select name="activeToKey" class="form-control">
+                            <option value="all" class="@Model.CheckActiveTo("all")">All</option>
+                            @foreach (Group6Flight.Models.Flight C in Model.Flight)
+                            {
+                                if (Model.ActiveToKey == C.To.ToString())
+                                {
+                                    <option value="@C.To" selected="true" class="@Model.CheckActiveTo(C.To.ToString())">
+                                        @C.To
+                                    </option>
+                                }
+                                else
+                                {
+                                    <option value="@C.To" class="@Model.CheckActiveTo(C.To.ToString())">
+                                        @C.To
+                                    </option>
+                                }
+                            }
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ActiveDepartureDate" class="form-label">Departure Date</label>
+                        <input type="date" id="ActiveDepartureDate" class="form-control" asp-for="ActiveDepartureDate" name="ActiveDepartureDate"
+                               value="@(Model.ActiveDepartureDate != "all" ? Model.ActiveDepartureDate : "")" autocomplete="off" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Apply Filters</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                @if (Model.Flight != null && Model.Flight.Any())
+                {
+                    @foreach (var flight in Model.Flight)
+                    {
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img src="~/img/@flight.Airline.ImageName" class="card-img-top" alt="@flight.Airline.ImageName" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Flight Time: @flight.DepartureTime</h5>
+                                    <p class="card-text">
+                                        <strong>Duration:</strong>
+                                        @{
+                                            var duration = flight.ArrivalTime - flight.DepartureTime;
+                                            if (duration.TotalMinutes < 0)
+                                            {
+                                                duration = duration.Add(TimeSpan.FromHours(24));
+                                            }
+                                        }
+                                        <span class="text-primary fw-bold">
+                                            @duration.ToString(@"hh\:mm")
+                                        </span>
+                                    </p>
+                                    <p class="card-text">
+                                        <strong>Emission:</strong> @flight.Emission |
+                                        <strong>Price:</strong> @flight.Price |
+                                    </p>
+                                    <a asp-action="Details" asp-route-id="@flight.FlightId" class="btn btn-success w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12">
+                        <div class="alert alert-info">
+                            No flights found for your selected filters.
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
 </div>
