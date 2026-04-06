@@ -71,6 +71,14 @@ namespace Group6Flight.Controllers
                                 .Select(f => f.CabinType)
                                 .Distinct()
                                 .ToList();
+            ViewBag.FromCities = _context.Flight
+                                .Select(f => f.From)
+                                .Distinct()
+                                .ToList();
+            ViewBag.ToCities = _context.Flight
+                                .Select(f => f.To)
+                                .Distinct()
+                                .ToList();
             model.Flight = query.ToList();
             return View(model);
         }

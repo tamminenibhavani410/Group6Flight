@@ -44,8 +44,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/yache/OneDrive/Attachments/Desktop/Juo_J/SPRING_2026/Bhavani Tammaneni/Project/Group6Flight/Group6Flight/Areas/Airlines/Views/Flights/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWlybGluZXNcVmlld3NcRmxpZ2h0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yache/OneDrive/Attachments/Desktop/Juo_J/SPRING_2026/Bhavani Tammaneni/Project/Group6Flight/Group6Flight/Areas/Airlines/Views/Flights/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWlybGluZXNcVmlld3NcRmxpZ2h0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yache/OneDrive/Attachments/Desktop/Juo_J/SPRING_2026/Bhavani Tammaneni/Project/Group6Flight/Group6Flight/Areas/Airlines/Views/Flights/Manage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWlybGluZXNcVmlld3NcRmxpZ2h0c1xNYW5hZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yache/OneDrive/Attachments/Desktop/Juo_J/SPRING_2026/Bhavani Tammaneni/Project/Group6Flight/Group6Flight/Areas/Airlines/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWlybGluZXNcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yache/OneDrive/Attachments/Desktop/Juo_J/SPRING_2026/Bhavani Tammaneni/Project/Group6Flight/Group6Flight/Areas/Airlines/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -60,8 +72,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWlybGluZXNcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/yache/OneDrive/Attachments/Desktop/Juo_J/SPRING_2026/Bhavani Tammaneni/Project/Group6Flight/Group6Flight/Views/Home/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yache/OneDrive/Attachments/Desktop/Juo_J/SPRING_2026/Bhavani Tammaneni/Project/Group6Flight/Group6Flight/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yache/OneDrive/Attachments/Desktop/Juo_J/SPRING_2026/Bhavani Tammaneni/Project/Group6Flight/Group6Flight/Views/Home/MyBookings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeUJvb2tpbmdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yache/OneDrive/Attachments/Desktop/Juo_J/SPRING_2026/Bhavani Tammaneni/Project/Group6Flight/Group6Flight/Views/Home/Privacy.cshtml]

@@ -37,20 +37,11 @@
                         <label for="activeFromKey" class="form-label">From</label>
                         <select name="activeFromKey" class="form-control">
                             <option value="all" class="@Model.CheckActiveFrom("all")">All</option>
-                            @foreach (Group6Flight.Models.Flight C in Model.Flight)
+                            @foreach (var from in ViewBag.FromCities)
                             {
-                                if (Model.ActiveFromKey == C.From.ToString())
-                                {
-                                    <option value="@C.From" selected="true" class="@Model.CheckActiveFrom(C.From.ToString())">
-                                        @C.From
-                                    </option>
-                                }
-                                else
-                                {
-                                    <option value="@C.From" class="@Model.CheckActiveFrom(C.From.ToString())">
-                                        @C.From
-                                    </option>
-                                }
+                                <option value="@from" selected="@(Model.ActiveFromKey == from)">
+                                    @from
+                                </option>
                             }
                         </select>
                     </div>
@@ -58,20 +49,11 @@
                         <label for="activeToKey" class="form-label">To</label>
                         <select name="activeToKey" class="form-control">
                             <option value="all" class="@Model.CheckActiveTo("all")">All</option>
-                            @foreach (Group6Flight.Models.Flight C in Model.Flight)
+                            @foreach (var to in ViewBag.ToCities)
                             {
-                                if (Model.ActiveToKey == C.To.ToString())
-                                {
-                                    <option value="@C.To" selected="true" class="@Model.CheckActiveTo(C.To.ToString())">
-                                        @C.To
-                                    </option>
-                                }
-                                else
-                                {
-                                    <option value="@C.To" class="@Model.CheckActiveTo(C.To.ToString())">
-                                        @C.To
-                                    </option>
-                                }
+                                <option value="@to" selected="@(Model.ActiveToKey == to)">
+                                    @to
+                                </option>
                             }
                         </select>
                     </div>
