@@ -48,6 +48,14 @@ namespace Group6Flight.Areas.Airlines.Controllers
         [HttpPost]
         public IActionResult Edit(Flight flight)
         {
+            if (TempData["okFlightCodeDate"] == null)
+            {
+                string msg = Check.DateFlightCodeCombo(context, flight.Date, flight.FlightCode);
+                if (!String.IsNullOrEmpty(msg))
+                {
+                    ModelState.AddModelError(nameof(flight.FlightCode), msg);
+                }
+            }
             if (ModelState.IsValid)
             {
                 if (flight.FlightId == 0)

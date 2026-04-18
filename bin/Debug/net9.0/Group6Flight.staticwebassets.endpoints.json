@@ -1471,6 +1471,304 @@
       ]
     },
     {
+      "Route": "js/future-date.ejrrh04piq.js",
+      "AssetFile": "js/future-date.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002092050209"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ejrrh04piq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w="
+        },
+        {
+          "Name": "label",
+          "Value": "js/future-date.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/future-date.ejrrh04piq.js",
+      "AssetFile": "js/future-date.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ejrrh04piq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w="
+        },
+        {
+          "Name": "label",
+          "Value": "js/future-date.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/future-date.ejrrh04piq.js.gz",
+      "AssetFile": "js/future-date.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ejrrh04piq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I="
+        },
+        {
+          "Name": "label",
+          "Value": "js/future-date.js.gz"
+        }
+      ]
+    },
+    {
+      "Route": "js/future-date.js",
+      "AssetFile": "js/future-date.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002092050209"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w="
+        }
+      ]
+    },
+    {
+      "Route": "js/future-date.js",
+      "AssetFile": "js/future-date.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w="
+        }
+      ]
+    },
+    {
+      "Route": "js/future-date.js.gz",
+      "AssetFile": "js/future-date.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js.gz",
       "Selectors": [
@@ -1511,7 +1809,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         },
         {
           "Name": "Vary",
@@ -1552,7 +1850,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1593,7 +1891,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         },
         {
           "Name": "Vary",
@@ -1648,7 +1946,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         },
         {
           "Name": "Vary",
@@ -1697,7 +1995,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1746,7 +2044,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         },
         {
           "Name": "Vary",

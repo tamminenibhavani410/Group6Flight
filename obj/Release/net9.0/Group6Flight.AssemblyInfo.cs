@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Group6Flight")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62ec49dee0ed47c1a51a924956d9fbad26ea712c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e01f5e35968416762ffa72c81bd0f30188bccfe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Group6Flight")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Group6Flight")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

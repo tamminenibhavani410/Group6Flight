@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C13f7NQ7bxnSNIdIv8Fyp+pVL+5I2544Tr16xIXOBRw=",
+  "Hash": "sgpaYyyy2v17DRO12io4xefsdu3AQrPwyIv4LL3xtYo=",
   "Source": "Group6Flight",
   "BasePath": "_content/Group6Flight",
   "Mode": "Default",
@@ -708,6 +708,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Identity": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\obj\\Debug\\net9.0\\compressed\\j3qsxwapdi-ejrrh04piq.gz",
+      "SourceId": "Group6Flight",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Group6Flight",
+      "RelativePath": "js/future-date#[.{fingerprint=ejrrh04piq}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\wwwroot\\js\\future-date.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "zmhtd58r1b",
+      "Integrity": "dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\wwwroot\\js\\future-date.js"
     },
     {
       "Identity": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\obj\\Debug\\net9.0\\compressed\\ja2ioqt0qv-493y06b0oq.gz",
@@ -1590,6 +1611,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\united_airlines.png"
+    },
+    {
+      "Identity": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\wwwroot\\js\\future-date.js",
+      "SourceId": "Group6Flight",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\wwwroot\\",
+      "BasePath": "_content/Group6Flight",
+      "RelativePath": "js/future-date#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ejrrh04piq",
+      "Integrity": "KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\future-date.js"
     },
     {
       "Identity": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\wwwroot\\js\\site.js",
@@ -4641,6 +4683,304 @@
       ]
     },
     {
+      "Route": "js/future-date.ejrrh04piq.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\obj\\Debug\\net9.0\\compressed\\j3qsxwapdi-ejrrh04piq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002092050209"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ejrrh04piq"
+        },
+        {
+          "Name": "label",
+          "Value": "js/future-date.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w="
+        }
+      ]
+    },
+    {
+      "Route": "js/future-date.ejrrh04piq.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\wwwroot\\js\\future-date.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ejrrh04piq"
+        },
+        {
+          "Name": "label",
+          "Value": "js/future-date.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w="
+        }
+      ]
+    },
+    {
+      "Route": "js/future-date.ejrrh04piq.js.gz",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\obj\\Debug\\net9.0\\compressed\\j3qsxwapdi-ejrrh04piq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ejrrh04piq"
+        },
+        {
+          "Name": "label",
+          "Value": "js/future-date.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I="
+        }
+      ]
+    },
+    {
+      "Route": "js/future-date.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\obj\\Debug\\net9.0\\compressed\\j3qsxwapdi-ejrrh04piq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002092050209"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w="
+        }
+      ]
+    },
+    {
+      "Route": "js/future-date.js",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\wwwroot\\js\\future-date.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w="
+        }
+      ]
+    },
+    {
+      "Route": "js/future-date.js.gz",
+      "AssetFile": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\obj\\Debug\\net9.0\\compressed\\j3qsxwapdi-ejrrh04piq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "477"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Apr 2026 17:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dWCivv9p2JvsbviOqEbdpcAikinSVldauTDSb2TkO9I="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Users\\yache\\OneDrive\\Attachments\\Desktop\\Juo_J\\SPRING_2026\\Bhavani Tammaneni\\Project\\Group6Flight\\Group6Flight\\obj\\Debug\\net9.0\\compressed\\fkjtm8f2sw-xogskm3gym.gz",
       "Selectors": [
@@ -4665,7 +5005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4718,7 +5058,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4755,7 +5095,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4802,7 +5142,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4863,7 +5203,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4908,7 +5248,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Apr 2026 04:39:19 GMT"
+          "Value": "Tue, 14 Apr 2026 17:16:16 GMT"
         },
         {
           "Name": "Cache-Control",
