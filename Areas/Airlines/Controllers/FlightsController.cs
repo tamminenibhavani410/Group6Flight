@@ -1,4 +1,5 @@
 ﻿using Group6Flight.Models;
+using Group6Flight.Models.DomainModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -7,110 +8,125 @@ namespace Group6Flight.Areas.Airlines.Controllers
     [Area("Airlines")]
     public class FlightsController : Controller
     {
-        private FlightDbContext context { get; set; }
+        private IFlightRepository flightRepo;
+        private IRepository<Airline> airlineRepo;
 
-        public FlightsController(FlightDbContext ctx) => context = ctx;
+        public FlightsController(
+            IFlightRepository fRepo,
+            IRepository<Airline> aRepo)
+        {
+            flightRepo = fRepo;
+            airlineRepo = aRepo;
+        }
 
+        // GET: Add
         [HttpGet]
         public IActionResult Add()
         {
             ViewBag.Action = "Add";
-            var airlines = context.Airline
-                .OrderBy(m => m.AirlineId).ToList();
-            ViewBag.Airlines = airlines
-                .Select(l => new SelectListItem
-                {
-                    Value = l.AirlineId.ToString(),
-                    Text = l.Name
-                })
-                .ToList();
+            LoadAirlines();
             return View("Edit", new Flight());
         }
 
+        // GET: Edit
         [HttpGet]
         public IActionResult Edit(int id)
         {
             ViewBag.Action = "Edit";
             ViewBag.Disable = "";
-            var airlines = context.Airline
-                .OrderBy(m => m.AirlineId).ToList();
-            ViewBag.Airlines = airlines
-                .Select(l => new SelectListItem
-                {
-                    Value = l.AirlineId.ToString(),
-                    Text = l.Name
-                })
-                .ToList();
-            var flight = context.Flight.Find(id);
+
+            LoadAirlines();
+
+            var flight = flightRepo.Get(id);
             return View(flight);
         }
 
+        // POST: Save (Add/Edit)
         [HttpPost]
         public IActionResult Edit(Flight flight)
         {
             if (TempData["okFlightCodeDate"] == null)
             {
-                string msg = Check.DateFlightCodeCombo(context, flight.Date, flight.FlightCode);
-                if (!String.IsNullOrEmpty(msg))
+                bool exists = flightRepo.FlightCodeDateExists(
+                    flight.FlightCode,
+                    flight.Date);
+
+                if (exists && flight.FlightId == 0)
                 {
-                    ModelState.AddModelError(nameof(flight.FlightCode), msg);
+                    ModelState.AddModelError(
+                        nameof(flight.FlightCode),
+                        "Flight code already exists for this date.");
                 }
             }
+
             if (ModelState.IsValid)
             {
                 if (flight.FlightId == 0)
                 {
-                    context.Flight.Add(flight);
+                    flightRepo.Insert(flight);
                     TempData["Message"] = $"{flight.FlightCode} Added Successfully";
                 }
                 else
                 {
-                    context.Flight.Update(flight);
+                    flightRepo.Update(flight);
                     TempData["Message"] = $"{flight.FlightCode} updated successfully.";
                 }
-                context.SaveChanges();
+
+                flightRepo.Save();
+
                 return RedirectToAction("Index", "Home");
             }
-            else
-            {
-                var airlines = context.Airline
-                .OrderBy(m => m.AirlineId).ToList();
-                ViewBag.Airlines = airlines
-                    .Select(l => new SelectListItem
-                    {
-                        Value = l.AirlineId.ToString(),
-                        Text = l.Name
-                    })
-                    .ToList();
-                ViewBag.Action = (flight.FlightId == 0) ? "Add" : "Edit";
-                return View(flight);
-            }
-        }
 
-        [HttpGet]
-        public IActionResult Delete(int id)
-        {
-            var flight = context.Flight.Find(id);
+            LoadAirlines();
+            ViewBag.Action = (flight.FlightId == 0) ? "Add" : "Edit";
+
             return View(flight);
         }
 
+        // GET: Delete
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var flight = flightRepo.Get(id);
+            return View(flight);
+        }
+
+        // POST: Delete
         [HttpPost]
         public IActionResult Delete(Flight flight)
         {
-            context.Flight.Remove(flight);
-            context.SaveChanges();
-            TempData["Message"] = $"{flight.FlightCode} Deleted Successfully";
+            flightRepo.Delete(flight);
+            flightRepo.Save();
+
+            TempData["Message"] =
+                $"{flight.FlightCode} Deleted Successfully";
+
             return RedirectToAction("Index", "Home");
         }
 
         public IActionResult ManageFlights()
         {
-            return Content($"Area: [Airlines], Controller: Flights, Action: ManageFlights");
+            return Content("Area: [Airlines], Controller: Flights, Action: ManageFlights");
         }
-        
+
         public IActionResult Regulation()
         {
-            return Content($"Area: [Airlines], Controller: Flights, Action: Regulation");
+            return Content("Area: [Airlines], Controller: Flights, Action: Regulation");
+        }
+
+        // dropdown helper
+        private void LoadAirlines()
+        {
+            var airlines = airlineRepo.List(new QueryOptions<Airline>())
+                .OrderBy(a => a.AirlineId)
+                .Select(a => new SelectListItem
+                {
+                    Value = a.AirlineId.ToString(),
+                    Text = a.Name
+                })
+                .ToList();
+
+            ViewBag.Airlines = airlines;
         }
     }
 }

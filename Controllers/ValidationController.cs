@@ -1,4 +1,5 @@
-﻿using Group6Flight.Models;
+﻿using Group6Flight.Models.DataLayer;
+using Group6Flight.Models.Validations;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Group6Flight.Controllers

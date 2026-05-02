@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
+using Group6Flight.Models.Validations;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
-namespace Group6Flight.Models
+namespace Group6Flight.Models.DomainModels
 {
     public class Flight
     {
@@ -32,28 +33,28 @@ namespace Group6Flight.Models
             AdditionalFields = nameof(FlightCode),
             ErrorMessage = "A flight for this date already exists.")]
         public DateTime Date { get; set; }
-        
+
         [Required(ErrorMessage = "Please enter a DepartureTime.")]
         public TimeSpan DepartureTime { get; set; }
-        
+
         [Required(ErrorMessage = "Please enter a ArrivalTime.")]
         public TimeSpan ArrivalTime { get; set; }
-        
+
         [Required(ErrorMessage = "Please enter a CabinType.")]
         public string CabinType { get; set; } = string.Empty;
-        
+
         [Required(ErrorMessage = "Please enter a Emission.")]
         [Range(0, 5000, ErrorMessage = "CO2 emissions must not exceed 5000 kg CO2e.")]
         public double Emission { get; set; }
-        
+
         [Required(ErrorMessage = "Please enter a AircraftType.")]
         public string AircraftType { get; set; } = string.Empty;
-        
+
         [Required(ErrorMessage = "Please enter a Price.")]
         [Range(0, 50000, ErrorMessage = "The price must be between 0 and 50,000 USD.")]
         public decimal Price { get; set; }
         public int AirlineId { get; set; }
         [ValidateNever]
-        public Airline Airline{ get; set; } = null!;
+        public Airline Airline { get; set; } = null!;
     }
 }

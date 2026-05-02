@@ -1,4 +1,6 @@
-﻿namespace Group6Flight.Models
+﻿using Group6Flight.Models.DomainModels;
+
+namespace Group6Flight.Models.ExtensionMethods
 {
     public class FlightSessions
     {

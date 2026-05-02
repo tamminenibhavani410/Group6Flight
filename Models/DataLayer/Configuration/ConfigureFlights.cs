@@ -1,27 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Group6Flight.Models.DomainModels;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Group6Flight.Models
+namespace Group6Flight.Models.DataLayer.Configuration
 {
-    public class FlightDbContext : DbContext
+    public class ConfigureFlights : IEntityTypeConfiguration<Flight>
     {
-        public FlightDbContext(DbContextOptions<FlightDbContext> options)
-            : base(options) { }
-        public DbSet<Airline> Airline { get; set; } = null!;
-        public DbSet<Flight> Flight { get; set; } = null!;
-        public DbSet<FlightBooking> FlightBookings{ get; set; } = null!;
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        public void Configure(EntityTypeBuilder<Flight> entity)
         {
-            modelBuilder.Entity<Airline>().HasData(
-                new Airline { AirlineId = 1, Name = "American Airlines", ImageName = "american_airlines.png" },
-                new Airline { AirlineId = 2, Name = "Delta Air Lines", ImageName = "delta_air_lines.png" },
-                new Airline { AirlineId = 3, Name = "United Airlines", ImageName = "united_airlines.png" },
-                new Airline { AirlineId = 4, Name = "Southwest Airlines", ImageName = "southwest_airlines.png" },
-                new Airline { AirlineId = 5, Name = "Alaska Airlines", ImageName = "alaska_airlines.png" },
-                new Airline { AirlineId = 6, Name = "JetBlue Airways", ImageName = "jetblue_airways.png" }
-            );
-
-            modelBuilder.Entity<Flight>().HasData(
+            entity.HasData(
                 new Flight
                 {
                     FlightId = 1,

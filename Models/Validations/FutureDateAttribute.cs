@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.ComponentModel.DataAnnotations;
 
-namespace Group6Flight.Models
+namespace Group6Flight.Models.Validations
 {
     public class FutureDateAttribute : ValidationAttribute, IClientModelValidator
     {
@@ -35,6 +35,6 @@ namespace Group6Flight.Models
         }
 
         private string GetMsg(string name) =>
-            base.ErrorMessage ?? $"{name} must be a valid future date within {maxYears} years.";
+            ErrorMessage ?? $"{name} must be a valid future date within {maxYears} years.";
     }
 }

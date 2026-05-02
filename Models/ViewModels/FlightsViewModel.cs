@@ -1,4 +1,6 @@
-﻿namespace Group6Flight.Models
+﻿using Group6Flight.Models.DomainModels;
+
+namespace Group6Flight.Models.ViewModels
 {
     public class FlightsViewModel
     {
@@ -10,9 +12,9 @@
         public List<Flight> Flight { get; set; } = new List<Flight>();
         public List<FlightBooking> FlightBooking { get; set; } = new List<FlightBooking>();
         public List<Airline> Airline { get; set; } = new List<Airline>();
-        public Flight Flights{ get; set; } = new Flight();
-        public FlightBooking FlightBookings{ get; set; } = new FlightBooking();
-        public Airline Airlines{ get; set; } = new Airline();
+        public Flight Flights { get; set; } = new Flight();
+        public FlightBooking FlightBookings { get; set; } = new FlightBooking();
+        public Airline Airlines { get; set; } = new Airline();
 
         public string CheckActiveFrom(string d) =>
             d.ToLower() == ActiveFromKey.ToLower() ? "active" : "";

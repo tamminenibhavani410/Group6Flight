@@ -29,7 +29,7 @@
 
                 <ul class="navbar-nav ms-auto">
                     @{
-                        var session = new FlightSessions(Context.Session);
+                        var session = new Group6Flight.Models.ExtensionMethods.FlightSessions(Context.Session);
                         int? count = session.GetMyBookingCount() ?? 0;
                     }
                     <a asp-controller="Home" asp-action="MyBookings"

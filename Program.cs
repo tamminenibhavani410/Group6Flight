@@ -1,4 +1,6 @@
 using Group6Flight.Models;
+using Group6Flight.Models.DataLayer;
+using Group6Flight.Models.DomainModels;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +10,10 @@ builder.Services.AddSession();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<IFlightRepository, FlightRepository>();
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+//builder.Services.AddScoped<IRepository<Airline>, Repository<Airline>>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddDbContext<FlightDbContext>(options =>
     options.UseSqlite(
         builder.Configuration.GetConnectionString("FlightsContext")));

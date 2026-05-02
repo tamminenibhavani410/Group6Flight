@@ -1,4 +1,4 @@
-namespace Group6Flight.Models
+namespace Group6Flight.Models.ViewModels
 {
     public class ErrorViewModel
     {

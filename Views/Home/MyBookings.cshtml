@@ -1,4 +1,4 @@
-﻿@model Group6Flight.Models.FlightsViewModel
+﻿@model Group6Flight.Models.ViewModels.FlightsViewModel
 @{
     ViewData["Title"] = "My Bookings";
 }
@@ -55,6 +55,11 @@
             <form asp-action="CancelAllBookings" method="post" class="mb-3">
                 <button type="submit" class="btn btn-danger">
                     <i class="fa-solid fa-trash"></i> Cancel All Bookings
+                </button>
+            </form>
+            <form asp-action="BookAllSelected" method="post" class="mb-3">
+                <button type="submit" class="btn btn-danger">
+                    <i class="fa-solid fa-trash"></i> Book All
                 </button>
             </form>
         </div>

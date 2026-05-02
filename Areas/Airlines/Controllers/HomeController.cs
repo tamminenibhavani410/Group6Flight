@@ -1,4 +1,4 @@
-﻿using Group6Flight.Models;
+﻿using Group6Flight.Models.DataLayer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

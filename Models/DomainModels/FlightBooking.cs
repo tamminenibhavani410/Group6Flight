@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
-namespace Group6Flight.Models
+namespace Group6Flight.Models.DomainModels
 {
     public class FlightBooking
     {
