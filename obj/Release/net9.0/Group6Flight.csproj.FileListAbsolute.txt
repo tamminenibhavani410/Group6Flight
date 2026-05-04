@@ -323,7 +323,6 @@ C:\Users\yache\OneDrive\Attachments\Desktop\Juo_J\SPRING_2026\Bhavani Tammaneni\
 C:\Users\yache\OneDrive\Attachments\Desktop\Juo_J\SPRING_2026\Bhavani Tammaneni\Project\Group6Flight\Group6Flight\obj\Release\net9.0\Group6Flight.pdb
 C:\Users\yache\OneDrive\Attachments\Desktop\Juo_J\SPRING_2026\Bhavani Tammaneni\Project\Group6Flight\Group6Flight\obj\Release\net9.0\Group6Flight.genruntimeconfig.cache
 C:\Users\yache\OneDrive\Attachments\Desktop\Juo_J\SPRING_2026\Bhavani Tammaneni\Project\Group6Flight\Group6Flight\obj\Release\net9.0\ref\Group6Flight.dll
-C:\Users\yache\OneDrive\Attachments\Desktop\Juo_J\SPRING_2026\Bhavani Tammaneni\Project\Group6Flight\Group6Flight\bin\Release\net9.0\Flights.db
 C:\Users\yache\OneDrive\Attachments\Desktop\Juo_J\SPRING_2026\Bhavani Tammaneni\Project\Group6Flight\Group6Flight\bin\Release\net9.0\Microsoft.Data.Sqlite.dll
 C:\Users\yache\OneDrive\Attachments\Desktop\Juo_J\SPRING_2026\Bhavani Tammaneni\Project\Group6Flight\Group6Flight\bin\Release\net9.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\yache\OneDrive\Attachments\Desktop\Juo_J\SPRING_2026\Bhavani Tammaneni\Project\Group6Flight\Group6Flight\bin\Release\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll

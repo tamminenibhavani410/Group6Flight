@@ -102,38 +102,30 @@ namespace Group6Flight.Controllers
             var cookies = new FlightCookies(Request.Cookies, Response.Cookies);
 
             var flight = flightRepo.Get(id);
+
             if (flight == null)
                 return NotFound();
 
-            if (bookingRepo.IsReserved(id))
+            var bookings = session.GetMyBookings();
+
+            // Check session instead of database
+            if (bookings.Any(b => b.FlightId == id))
             {
-                TempData["Error"] = "Flight already reserved.";
+                TempData["Error"] = "Flight already selected.";
                 return RedirectToAction("MyBookings");
             }
 
-            bookingRepo.Insert(new FlightBooking
+            bookings.Add(new FlightBooking
             {
-                FlightId = id
+                FlightBookingId = id,
+                FlightId = id,
+                Flight = flight
             });
 
-            bookingRepo.Save();
+            session.SetMyBookings(bookings);
+            cookies.SetMyBookingIds(bookings);
 
-            var bookings = session.GetMyBookings();
-
-            if (!bookings.Any(b => b.FlightId == id))
-            {
-                bookings.Add(new FlightBooking
-                {
-                    FlightBookingId = id,
-                    FlightId = id,
-                    Flight = flight
-                });
-
-                session.SetMyBookings(bookings);
-                cookies.SetMyBookingIds(bookings);
-            }
-
-            TempData["Message"] = "Flight reserved successfully!";
+            TempData["Message"] = "Flight added successfully!";
             return RedirectToAction("MyBookings");
         }
 
@@ -151,20 +143,25 @@ namespace Group6Flight.Controllers
                 return RedirectToAction("MyBookings");
             }
 
-            foreach (var f in selected)
+            foreach (var item in selected)
             {
-                if (!bookingRepo.IsReserved(f.FlightId))
+                // check actual flight exists
+                var flight = flightRepo.Get(item.FlightId);
+
+                if (flight != null)
                 {
-                    bookingRepo.Insert(new FlightBooking
+                    if (!bookingRepo.IsReserved(item.FlightId))
                     {
-                        FlightId = f.FlightId
-                    });
+                        bookingRepo.Insert(new FlightBooking
+                        {
+                            FlightId = item.FlightId
+                        });
+                    }
                 }
             }
 
             bookingRepo.Save();
 
-            // Clear temporary selected flights
             session.SetMyBookings(new List<FlightBooking>());
             cookies.RemoveMyBookingIds();
 

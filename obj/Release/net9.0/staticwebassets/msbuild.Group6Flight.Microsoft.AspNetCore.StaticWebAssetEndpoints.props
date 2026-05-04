@@ -124,13 +124,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\future-date.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ejrrh04piq"},{"Name":"integrity","Value":"sha256-KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w="},{"Name":"label","Value":"_content/Group6Flight/js/future-date.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"848"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\u0022"},{"Name":"Last-Modified","Value":"Wed, 15 Apr 2026 18:42:03 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"848"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Apr 2026 02:17:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Group6Flight/js/future-date.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\future-date.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"848"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\u0022"},{"Name":"Last-Modified","Value":"Wed, 15 Apr 2026 18:42:03 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"848"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022KvWxMe5/C8xqtALy8rHEV0Nw92LY/Psxb/xZiDYI85w=\u0022"},{"Name":"Last-Modified","Value":"Mon, 20 Apr 2026 02:17:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Group6Flight/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

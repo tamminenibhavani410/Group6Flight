@@ -10,13 +10,16 @@ namespace Group6Flight.Areas.Airlines.Controllers
     {
         private IFlightRepository flightRepo;
         private IRepository<Airline> airlineRepo;
+        private IBookingRepository bookingRepo;
 
         public FlightsController(
             IFlightRepository fRepo,
-            IRepository<Airline> aRepo)
+            IRepository<Airline> aRepo,
+            IBookingRepository bRepo)
         {
             flightRepo = fRepo;
             airlineRepo = aRepo;
+            bookingRepo = bRepo;
         }
 
         // GET: Add
@@ -95,6 +98,19 @@ namespace Group6Flight.Areas.Airlines.Controllers
         [HttpPost]
         public IActionResult Delete(Flight flight)
         {
+            bool hasReservations = bookingRepo.List(
+                new QueryOptions<FlightBooking>())
+                .Any(b => b.FlightId == flight.FlightId);
+
+            if (hasReservations)
+            {
+                TempData["Message"] =
+                    $"Cannot delete {flight.FlightCode}. " +
+                    $"This flight has existing reservations.";
+
+                return RedirectToAction("Index", "Home");
+            }
+
             flightRepo.Delete(flight);
             flightRepo.Save();
 
